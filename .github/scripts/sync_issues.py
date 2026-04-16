@@ -11,11 +11,11 @@ with open('issues.txt', 'r', encoding='utf-8') as f:
 try:
     # ghコマンドで全IssueのタイトルをJSON形式で取得
     result = subprocess.run(
-        ['gh', 'issue', 'list', '--state', 'all', '--json', 'title', '--limit', '1000'],
+        ['gh', 'issue', 'list', '--state', 'all', '--json', 'title,number,state', '--limit', '1000'],
         capture_output=True, text=True, check=True
     )
-    existing_issues = json.loads(result.stdout)
-    existing_titles = {issue['title'] for issue in existing_issues}
+    existing_issues_list = json.loads(result.stdout)
+    existing_issues = {issue['title']: issue for issue in existing_issues_list}
 except Exception as e:
     print(f"Error fetching issues: {e}")
     existing_titles = set()
