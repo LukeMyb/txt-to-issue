@@ -1,4 +1,4 @@
-issue test
+issue test closed
 issueを立てるテスト
 
 issue test 2
