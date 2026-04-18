@@ -6,3 +6,6 @@ issueを立てるテスト
 
 issue test 3
 issueを立てるテスト
+
+issue test 4
+issueが草に反映されるかのテスト
