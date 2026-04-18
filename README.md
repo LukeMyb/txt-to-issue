@@ -21,6 +21,21 @@ project_root/
 
 ---
 
+## 草を生やすための初期設定
+
+自動作成されたIssueをあなた自身の「コントリビューション（草）」として反映させるために、以下の設定が必要です。
+
+### 1. PAT（個人トークン）の発行
+GitHub右上のアイコン ＞ Settings ＞ Developer settings ＞ Personal access tokens ＞ Tokens (classic) を開きます。
+「Generate new token (classic)」をクリックし、Expirationを「No expiration（無期限）」、Select scopesで「repo」のみにチェックを入れて発行します。
+表示された「ghp_」から始まる文字列をコピーします。
+
+### 2. リポジトリへの登録
+このシステムを導入するリポジトリの Settings ＞ Secrets and variables ＞ Actions を開きます。
+「New repository secret」をクリックし、Nameに「MY_PAT」、Secretにコピーした文字列を貼り付けて保存します。
+
+---
+
 ## 書き方
 
 アイデアやタスクを登録したいときは、issues.txt を以下のように記述します。
