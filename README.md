@@ -25,6 +25,8 @@ project_root/
 
 自動作成されたIssueをあなた自身の「コントリビューション（草）」として反映させるために、以下の設定が必要です。
 
+※注意：この設定を有効にすると「ファイルの更新（コミット）」と「Issueの作成」の両方があなたの活動としてカウントされます。1回のプッシュで草が2重に記録されるため、これを重複と捉えて避けたい場合は、この設定は行わずデフォルト（GITHUB_TOKEN）のまま運用してください。
+
 ### 1. PAT（個人トークン）の発行
 GitHub右上のアイコン ＞ Settings ＞ Developer settings ＞ Personal access tokens ＞ Tokens (classic) を開きます。
 「Generate new token (classic)」をクリックし、Expirationを「No expiration（無期限）」、Select scopesで「repo」のみにチェックを入れて発行します。
