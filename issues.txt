@@ -1,11 +1,5 @@
-issue test
+issue example
 issueを立てるテスト
 
-issue test 2 closed
+issue example 2
 issueを立てるテスト
-
-issue test 3
-issueを立てるテスト
-
-issue test 4
-issueが草に反映されるかのテスト
