@@ -1,5 +1,5 @@
 issue example
 issueを立てるテスト
 
-issue example 2
+issue example 2 closed
 issueを立てるテスト
