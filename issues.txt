@@ -3,3 +3,6 @@ issueを立てるテスト
 
 issue example 2 closed
 issueを立てるテスト
+
+issue example 3
+issueの編集テスト
